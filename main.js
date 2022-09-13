@@ -64,7 +64,7 @@ correo.addEventListener('change',(event)=>{
 });
 
 ciudad.addEventListener('change',(event)=>{
-    validFields.ciud = ciudad.selectedIndex === !-1
+    validFields.ciud = ciudad.selectedIndex > 0 ? true : false;
     console.log(Object.values(validFields));
 });
 
